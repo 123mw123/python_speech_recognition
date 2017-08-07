@@ -1,3 +1,7 @@
+
+#part of the code is taken from https://pythonspot.com/en/personal-assistant-jarvis-in-python/
+
+
 import speech_recognition as sr
 from time import ctime
 import time
@@ -70,7 +74,6 @@ def automate(data):
         songlist = [i for i in os.listdir("C:\Users\saiteja\Music") if i[len(i)-1:len(i)] == str(3)]
         for i in range(len(songlist)):
 
-
                 print i, "-->" + songlist[i]
 
         speak("Choose song to play")
@@ -79,8 +82,9 @@ def automate(data):
         os.startfile(os.path.join("C:\Users\saiteja\Music\\" +songlist[int(item)]))
 
     if "Facebook" in data:
-
         webbrowser.open("https://www.facebook.com/")
+	
+	
         #opening gmail
     if "Gmail" in data:
         webbrowser.open("https://mail.google.com/mail/u/0/#inbox")
