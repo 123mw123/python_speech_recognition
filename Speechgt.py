@@ -108,8 +108,6 @@ time.sleep(2)
 speak("Hi Sai Teja Ramadev, what can I do for you?")
 
 
-
-print os.listdir("C:\Users\saiteja\Music")
 while 1:
     data = recordAudio()
     automate(data)
